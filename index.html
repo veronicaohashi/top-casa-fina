@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="style.css">  
 
     <!-- Calula o tamanho da tela a partir do device utilizado e não a partir do computador
       e utilizamos o initial scale para não dar zoom -->
@@ -11,14 +12,45 @@
     <div class="container">
       <h2>Sobre Nós</h2>
       <img src="bootstrap/img/empresa.jpg" class="img-responsive" alt="Responsive image">
-      <h2 data-toggle="collapse" data-target="#primeiro-paragrafo">Desde de 1985</h2>
-      <p class="collapse in" id="primeiro-paragrafo">A TopCasaFina Arquitetura esta no mercado desde...</p>
 
-      <h2 data-toggle="collapse" data-target="#segundo-paragrafo">Desde de 1985</h2>
-      <p class="collapse" id="segundo-paragrafo">A TopCasaFina Arquitetura esta no mercado desde...</p>
-
-      <h2 data-toggle="collapse" data-target="#terceiro-paragrafo">Desde de 1985</h2>
-      <p class="collapse" id="terceiro-paragrafo">A TopCasaFina Arquitetura esta no mercado desde...</p>
+      <div class="panel-group" id="paineis-sobre-nos">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre-nos">Desde de 1985</h3>  
+          </div>
+          <div class="collapse in" id="primeiro-paragrafo"> 
+            <div class="panel-body">
+              <p>A TopCasaFina Arquitetura esta no mercado desde...</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre-nos">
+              Preços acessíveis
+            </h3>
+          </div>
+          <div  class="collapse" id="segundo-paragrafo">
+            <div class="panel-body">
+              <p>Preços a partir   de R$1000.00</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre-nos">
+              Alegria para colaborar com um mundo mais bonito
+            </h3>
+          </div>
+          <div class="collapse" id="terceiro-paragrafo">
+            <div class="panel-body">
+              <p>Trazendo alegria para a vida das pessoas</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="bootstrap/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
