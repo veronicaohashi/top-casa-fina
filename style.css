@@ -26,3 +26,24 @@ footer{
 footer address:last-child{
   margin-bottom: 0;
 }
+header{
+  background-image: url(bootstrap/img/castelo.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+}
+header h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Necessário definir a altura dos elementos pais para poder definir a altura do elemento filho */
+html, body{
+  height: 100%;
+}
+.topcasafina-banner{
+  color: #FFF;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+}
